@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        .click {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button class="click"> Clicked Me !</button>
+    <br>
+    <br>
+    <button id="Button"> Disable Me! </button>
+
+    <script>
+        var button = document.getElementById("Button");
+        var clickBtn = document.getElementsByClassName('click')[0];
+
+        // Disable the button on initial page load
+        button.disabled = false;
+
+        //add event listener
+        clickBtn.addEventListener('click', function (event) {
+            button.disabled = !button.disabled;
+        });
+
+        button.addEventListener('click', function (event) {
+            alert('Enabled!');
+        });
+
+    </script>
+</body>
+
+</html>

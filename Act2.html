@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highlight Bold Words</title>
+</head>
+
+<body>
+    <p>t is a long established <strong>that a reader will be distracted by the readable <strong>this</strong>content of a page when looking
+            at</strong> its layout. The point of using Lorem Ipsum<strong>this</strong> is that it has a more-or-less normal distribution of
+        letters, as opposed to using 'Content here, content here', making it look like readable E<strong>We</strong>
+        have just started <strong>this</strong> section for the users (<strong>beginner</strong> to
+        intermediate) who <strong>want</strong> to work with <strong>various</strong> JavaScript
+        <strong>problems</strong> and write scripts online to <strong>test</strong> their JavaScript
+        <strong>skill</strong>.
+    </p>
+    <button onMouseOver="highlight()" onMouseOut="normal()"> Hover Me!</button>
+    <script>
+
+       
+        var bold_Items;
+        window.onload = get_boldItems();
+
+        
+        function get_boldItems() {
+            bold_Items = document.getElementsByTagName('strong');
+        }
+       
+        function highlight() {
+            for (var i = 0; i < bold_Items.length; i++) {
+                bold_Items[i].style.color = "red";
+            }
+        }
+
+        function normal() {
+            for (var i = 0; i < bold_Items.length; i++) {
+                bold_Items[i].style.color = "black";
+            }
+        }
+
+    </script>
+</body>
+
+
+</html>
