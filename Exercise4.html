@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise4</title>
+</head>
+<body>
+     <h1>Result : <span id="display"></span></h1>
+    <script>
+        alert ("a JavaScript program that computes the sum of two integers. If the two values are the same, it return triple of their sum. Please click ok to continue")
+       
+    
+        function triple(){
+            var num1 = parseFloat(prompt("Enter your first number: "));
+            var num2 = parseFloat(prompt("Enter your second number:"));
+            
+            if (num1 == num2){
+                return (num1 + num2)*3;
+            }
+            else{
+                return (num1 + num2);
+            }
+          
+        }
+        document.getElementById('display').innerHTML = triple();
+        
+    
+        </script>
+</body>
+</html>
