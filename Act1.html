@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Disable button </title>
     <style>
        
         .click {
@@ -16,14 +16,14 @@
 
 <body>
 
-    <button class="click"> Clicked Me !</button>
+    <button class ="click"> Clicked Me !</button>
     <br>
     <br>
-    <button id="Button"> Disable Me! </button>
+    <button class ="Button"> Disable Me! </button>
 
     <script>
-        var button = document.getElementById("Button");
         var clickBtn = document.getElementsByClassName('click')[0];
+        var button = document.getElementsByClassName("Button");
 
         // Disable the button on initial page load
         button.disabled = false;
